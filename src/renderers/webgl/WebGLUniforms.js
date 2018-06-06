@@ -152,7 +152,7 @@ function setValue3fv( gl, v ) {
 	else if ( v.r !== undefined )
 		gl.uniform3f( this.addr, v.r, v.g, v.b );
 	else
-		gl.uniform3fv( this.addr, v );
+		gl.uniform3fv( this.addr, new Float32Array(v) );
 
 }
 

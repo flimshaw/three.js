@@ -311,9 +311,9 @@ function WebGLProgram( renderer, code, material, parameters ) {
 
 		prefixVertex = [
 
-        
-			'precision ' + parameters.precision + ' float;',
-			'precision ' + parameters.precision + ' int;',
+			//
+			// 'precision ' + parameters.precision + ' float;',
+			// 'precision ' + parameters.precision + ' int;',
 
 			'#define SHADER_NAME ' + material.__webglShader.name,
 
@@ -419,9 +419,9 @@ function WebGLProgram( renderer, code, material, parameters ) {
 		prefixFragment = [
 
 			customExtensions,
-
-			'precision ' + parameters.precision + ' float;',
-			'precision ' + parameters.precision + ' int;',
+			//
+			// 'precision ' + parameters.precision + ' float;',
+			// 'precision ' + parameters.precision + ' int;',
 
 			'#define SHADER_NAME ' + material.__webglShader.name,
 
